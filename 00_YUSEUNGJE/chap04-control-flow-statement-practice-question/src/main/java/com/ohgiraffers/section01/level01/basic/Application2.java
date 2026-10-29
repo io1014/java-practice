@@ -1,11 +1,30 @@
 package com.ohgiraffers.section01.level01.basic;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Application2 {
 
     public static void main(String[] args) {
 
+       String[] fruits = {"딸기", "바나나", "복숭아", "키위", "사과"};
+
+       Scanner sc = new Scanner(System.in);
+       System.out.print("0부터 4까지의 정수를 입력하세요:");
+       int i = sc.nextInt();
+
+       switch(i){
+            case 0:
+           case 1:
+           case 2:
+           case 3:
+           case 4:
+               System.out.println(fruits[i]);
+               break;
+           default:
+               System.out.println("준비된 과일이 없습니다");
+               break;
+        }
         /* 길이가 5인 String 배열을 선언하고
          * "딸기", "바나나", "복숭아", "키위", "사과" 로 초기화를 하고
          * 스캐너로 0부터 4까지의 정수를 입력 받아
